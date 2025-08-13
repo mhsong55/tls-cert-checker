@@ -53,7 +53,7 @@ python check-appgw-cert-info.py
 ```
 
 실행하면:
-1. Azure에 로그인하고 구독을 설정
+1. Azure에 로그인하고 구독을 지정
 2. Application Gateway의 HTTPS 리스너를 탐지
 3. 각 도메인의 TLS 인증서 정보를 수집
 4. 결과를 CSV 파일로 저장
@@ -74,10 +74,7 @@ cert-renew-check/
 ├── check-appgw-cert-info.py    # 메인 스크립트
 ├── requirements.txt            # Python 의존성
 ├── settings/                   # 설정 파일들
-│   ├── JPF-HUB-APPGW.settings.json
-│   └── JPNR-APPGW.settings.json
+│   └── <your-settings>.settings.json
 └── results/                    # 결과 CSV 파일들
-    ├── 20250813_JPF-HUB-APPGW-TLS-Cert-Info.csv
-    ├── JPF-HUB-APPGW-TLS-Cert-Info.csv
-    └── JPNR-APPGW-TLS-Cert-Info.csv
+    └── output.csv
 ```
